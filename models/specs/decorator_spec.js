@@ -10,4 +10,8 @@ describe('Decorator', function(){
         const actual = decorator.name;
         assert.strictEqual(actual, 'Bob');
     });
+    it('should start with emoty stock', function(){
+        const actual = decorator.paintStock;
+        assert.deepStrictEqual(actual, []);
+    });
 });
